@@ -59,7 +59,7 @@ function App() {
   };
 
   return (
-    <div className='clock-section relative flex flex-col items-start bg-black h-screen p-4'>
+    <div className='clock-section relative flex flex-col items-start p-4'>
       <div className='clock-container relative z-[999]'>
         <div className='clock-wrapper z-[999] relative overflow-visible flex flex-row items-center gap-6 justify-center bg-[#192135] rounded-4xl px-6 py-4 border border-3 border-[#E1E9F8]'>
           <div className='icon-wrapper'>
