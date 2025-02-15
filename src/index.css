@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-fredoka: "Fredoka", serif;
+  --font-bebas-neue: "Bebas Neue", serif;
+}
+
+
+.clock-container::before {
+  content: '';
+  background: #7F85CE;
+  border: 4px solid #E1E9F8;
+  border-radius: 30px;
+  top: 15px;
+  left: 15px;
+  bottom: -15px;
+  right: -15px;
+  position: absolute;
+  z-index: -1;
+}
