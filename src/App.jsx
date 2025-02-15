@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import sunIcon from './assets/sun.svg';
+import moonIcon from './assets/moon.svg';
 
 function App() {
   const [time, setTime] = useState(new Date());
@@ -32,7 +34,7 @@ function App() {
 
   useEffect(() => {
     // Update icon berdasarkan waktu
-    const newIcon = isSunTime ? './src/assets/sun.svg' : './src/assets/moon.svg';
+    const newIcon = isSunTime ? sunIcon : moonIcon;
     
     if (currentIcon !== newIcon) {
       setIsTransitioning(true);
